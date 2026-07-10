@@ -5,7 +5,7 @@ cask "antani" do
   # url is rewritten in full by .github/workflows/bump-tap.yml in the main
   # AntanI repo, using the real asset URL from the published GitHub Release
   # (Tauri's exact dmg filename isn't guessed/templated here).
-  url "null"
+  url "https://github.com/skixmix/AntanI/releases/download/v0.2.0/AntanI_0.2.0_universal.dmg"
   name "AntanI"
   desc "Minimal macOS orchestrator for CLI coding agents, terminals, and an embedded VS Code"
   homepage "https://github.com/skixmix/AntanI"
