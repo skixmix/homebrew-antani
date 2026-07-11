@@ -17,4 +17,12 @@ cask "antani" do
   postflight do
     system_command "xattr", args: ["-cr", "#{appdir}/AntanI.app"], sudo: false
   end
+
+  caveats <<~EOS
+    AntanI is unsigned, so macOS can't reliably remember per-folder file
+    access grants (e.g. Documents) for the terminals it spawns and may
+    prompt repeatedly. To avoid this, grant it Full Disk Access:
+
+      System Settings > Privacy & Security > Full Disk Access > add AntanI
+  EOS
 end
