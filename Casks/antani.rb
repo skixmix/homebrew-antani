@@ -1,11 +1,11 @@
 cask "antani" do
-  version "0.3.0"
-  sha256 "79e3ad841e22a0c47b937b9ff114576415b8d815451e2854eb5f34a97d5c1cf7"
+  version "0.4.0"
+  sha256 "f24f70655a0d22d23b8e2ec6d74ba44ef9576361d8e7c46080adb2a62c87fe31"
 
   # url is rewritten in full by .github/workflows/bump-tap.yml in the main
   # AntanI repo, using the real asset URL from the published GitHub Release
   # (Tauri's exact dmg filename isn't guessed/templated here).
-  url "https://github.com/skixmix/AntanI/releases/download/v0.3.0/AntanI_0.3.0_universal.dmg"
+  url "https://github.com/skixmix/AntanI/releases/download/v0.4.0/AntanI_0.4.0_universal.dmg"
   name "AntanI"
   desc "Minimal macOS orchestrator for CLI coding agents, terminals, and an embedded VS Code"
   homepage "https://github.com/skixmix/AntanI"
